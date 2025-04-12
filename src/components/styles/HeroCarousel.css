@@ -1,0 +1,323 @@
+/* ================ */
+/* HERO CAROUSEL CSS */
+/* ================ */
+
+/* Base Variables */
+:root {
+  --primary-amber: #d97706;
+  --primary-amber-dark: #b45309;
+  --text-light: #ffffff;
+  --text-shadow: rgba(0, 0, 0, 0.5);
+  --overlay-gradient: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+  --box-shadow: 0 4px 15px rgba(217, 119, 6, 0.4);
+  --box-shadow-hover: 0 6px 20px rgba(217, 119, 6, 0.6);
+}
+
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+
+/* Base Carousel Styles */
+.hero-carousel {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 900px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* Slide Container */
+.hero-slide {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  outline: none; /* Remove focus outline */
+}
+
+/* Image Overlay */
+.hero-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--overlay-gradient);
+  z-index: 1;
+}
+
+/* Background Image */
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  opacity: 0;
+}
+
+.hero-image.loaded {
+  opacity: 1;
+}
+
+/* Content Wrapper */
+.hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Content Container */
+.hero-content-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Product Image Container */
+.hero-product-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  perspective: 1000px;
+}
+
+/* Product Image */
+.hero-product-image {
+  max-height: 70vh;
+  height: auto;
+  max-width: 100%;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+  transform-style: preserve-3d;
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hero-product-image.loaded {
+  opacity: 1;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0) rotateY(0deg) scale(1);
+  }
+  50% { 
+    transform: translateY(-20px) rotateY(10deg) scale(1.02);
+    filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.4));
+  }
+}
+
+/* Text Content Container */
+.hero-text-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  color: var(--text-light);
+  padding: 20px;
+}
+
+/* Title */
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px var(--text-shadow);
+  letter-spacing: 0.5px;
+}
+
+/* Subtitle */
+.hero-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  max-width: 100%;
+  line-height: 1.6;
+  text-shadow: 1px 1px 2px var(--text-shadow);
+  opacity: 0.9;
+}
+
+/* Button */
+.hero-button {
+  background-color: var(--primary-amber);
+  color: var(--text-light);
+  border: none;
+  padding: 15px 40px;
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: var(--box-shadow);
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-button:hover {
+  background-color: var(--primary-amber-dark);
+  transform: translateY(-3px);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.hero-button:active {
+  transform: translateY(-1px);
+}
+
+/* Slick Carousel Customization */
+.slick-dots {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  display: flex !important;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  z-index: 3;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  text-indent: -9999px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slick-dots li.slick-active button {
+  background: var(--primary-amber);
+  transform: scale(1.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .hero-content-container {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-carousel {
+    min-height: 700px;
+  }
+
+  .hero-content-container {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 80px;
+    gap: 20px;
+  }
+
+  .hero-product-container {
+    padding-bottom: 20px;
+    max-width: 500px;
+  }
+
+  .hero-text-container {
+    padding-top: 0;
+  }
+
+  .hero-subtitle {
+    margin: 0 auto 2rem;
+  }
+
+  .slick-dots {
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-carousel {
+    min-height: 600px;
+    height: 80vh;
+  }
+
+  .hero-content-container {
+    padding: 0 20px;
+  }
+
+  .hero-product-image {
+    max-height: 300px;
+  }
+
+  .hero-button {
+    padding: 12px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-carousel {
+    min-height: 500px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-button {
+    padding: 10px 25px;
+  }
+
+  .slick-dots li button {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* Loading Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Print Styles */
+@media print {
+  .hero-carousel {
+    height: auto;
+    min-height: 0;
+  }
+  
+  .hero-image-overlay {
+    display: none;
+  }
+}

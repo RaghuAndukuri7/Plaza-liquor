@@ -1,0 +1,128 @@
+/* StoreInfo.css */
+
+.store-info-section {
+    background-color: #f8f8f8;
+    padding: 4rem 0;
+    position: relative;
+  }
+  
+  .store-info-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .store-info-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 3rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .store-info-title {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .store-info-subtitle {
+    font-size: 1.5rem;
+    color: #b91c1c;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-weight: 600;
+  }
+  
+  .store-info-points {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .info-point {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+  
+  .point-icon {
+    font-size: 2rem;
+    background-color: #f3f4f6;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
+  .point-content h4 {
+    font-size: 1.25rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .point-content p {
+    color: #4b5563;
+    line-height: 1.6;
+  }
+  
+  .store-info-cta {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px dashed #e5e7eb;
+  }
+  
+  .price-challenge {
+    font-size: 1.25rem;
+    color: #1a1a1a;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .store-slogan {
+    font-size: 1.5rem;
+    color: #b91c1c;
+    font-style: italic;
+    font-weight: 700;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .store-info-content {
+      padding: 2rem;
+    }
+    
+    .store-info-title {
+      font-size: 2rem;
+    }
+    
+    .store-info-subtitle {
+      font-size: 1.25rem;
+    }
+    
+    .info-point {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .store-info-section {
+      padding: 3rem 0;
+    }
+    
+    .store-info-container {
+      padding: 0 1rem;
+    }
+    
+    .store-slogan {
+      font-size: 1.25rem;
+    }
+  }
