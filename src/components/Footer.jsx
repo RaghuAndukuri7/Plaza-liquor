@@ -98,22 +98,22 @@ const Footer = () => {
             <h3 className="footer-heading">We Accept</h3>
             <div className="payment-methods">
               <div className="payment-method">
-                <img src="/images/payment/visa.png" alt="Visa" className="payment-icon" />
+                <img src="./images/payment/visa.png" alt="Visa" className="payment-icon" />
               </div>
               <div className="payment-method">
-                <img src="./images/payment/mastercard.png" alt="Mastercard" className="payment-icon" />
+                <img src="./images/payment/Mastercard.png" alt="Mastercard" className="payment-icon" />
               </div>
               <div className="payment-method">
                 <img src="./images/payment/amex.png" alt="American Express" className="payment-icon" />
               </div>
               <div className="payment-method">
-                <img src="./images/payment/discover.png" alt="Discover" className="payment-icon" />
+                <img src="./images/payment/Discover.png" alt="Discover" className="payment-icon" />
               </div>
               <div className="payment-method">
                 <img src="./images/payment/apple-pay.png" alt="Apple Pay" className="payment-icon" />
               </div>
               <div className="payment-method">
-                <img src="./images/payment/paypal.png" alt="PayPal" className="payment-icon" />
+                <img src="./images/payment/PayPal.png" alt="PayPal" className="payment-icon" />
               </div>
             </div>
           </div>

@@ -4,15 +4,15 @@ import { motion } from 'framer-motion';
 import './styles/ProductsGrid.css';
 
 const products = [
-  { id: 1, name: 'Whiskey', image: '/images/productType/whiskey.jpg', link: '/products/whiskey' },
-  { id: 2, name: 'Tequila', image: '/images/productType/tequila.jpg', link: '/products/tequila' },
-  { id: 3, name: 'Vodka', image: '/images/productType/vodka.jpg', link: '/products/vodka' },
-  { id: 4, name: 'GIN', image: '/images/productType/gin.jpg', link: '/products/gin' },
-  { id: 5, name: 'Cognac & Brandy', image: '/images/productType/cognac.jpg', link: '/products/cognac' },
-  { id: 6, name: 'RUM', image: '/images/productType/rum.jpg', link: '/products/rum' },
-  { id: 7, name: 'Wine', image: '/images/productType/wine.jpg', link: '/products/wine' },
-  { id: 8, name: 'Champagne', image: '/images/productType/champagne.jpg', link: '/products/champagne' },
-  { id: 9, name: 'Beers', image: '/images/productType/beer.jpg', link: '/products/beers' },
+  { id: 1, name: 'Whiskey', image: './images/productType/whiskey.jpg', link: '/products/whiskey' },
+  { id: 2, name: 'Tequila', image: './images/productType/tequila.jpg', link: '/products/tequila' },
+  { id: 3, name: 'Vodka', image: './images/productType/vodka.jpg', link: '/products/vodka' },
+  { id: 4, name: 'GIN', image: './images/productType/gin.jpg', link: '/products/gin' },
+  { id: 5, name: 'Cognac & Brandy', image: './images/productType/cognac.jpg', link: '/products/cognac' },
+  { id: 6, name: 'RUM', image: '../images/productType/rum.jpg', link: '/products/rum' },
+  { id: 7, name: 'Wine', image: './images/productType/wine.jpg', link: '/products/wine' },
+  { id: 8, name: 'Champagne', image: './images/productType/champagne.jpg', link: '/products/champagne' },
+  { id: 9, name: 'Beers', image: './images/productType/beer.jpg', link: '/products/beers' },
 ];
 
 const ProductsGrid = () => {
