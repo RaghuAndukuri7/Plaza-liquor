@@ -21,7 +21,7 @@ const HeroCarousel = () => {
     {
       id: 2,
       image: '../images/hero/winehero.JPG',
-      productImage: './images/products/winebottle.png',
+      productImage: './images/products/winebottle.JPG',
       title: 'Exquisite Wine Selection',
       subtitle: 'Perfect pairings for every occasion and palate',
       buttonText: 'Explore Wines'
