@@ -12,24 +12,24 @@ const HeroCarousel = () => {
   const slides = [
     {
       id: 1,
-      image: '/images/hero/whiskey-hero.jpg',
-      productImage: '/images/products/whiskey-bottle.png',
+      image: './images/hero/whiskey-hero.jpg',
+      productImage: './images/products/whiskey-bottle.png',
       title: 'Premium Whiskey Collection',
       subtitle: 'Discover our exclusive selection of fine whiskeys from around the world',
       buttonText: 'Shop Now'
     },
     {
       id: 2,
-      image: '/images/hero/wine-hero.jpg',
-      productImage: '/images/products/wine-bottle.png',
+      image: './images/hero/wine-hero.jpg',
+      productImage: './images/products/wine-bottle.png',
       title: 'Exquisite Wine Selection',
       subtitle: 'Perfect pairings for every occasion and palate',
       buttonText: 'Explore Wines'
     },
     {
       id: 3,
-      image: '/images/hero/craft-beer-hero.jpg',
-      productImage: '/images/products/beer-bottle.png',
+      image: './images/hero/craft-beer-hero.jpg',
+      productImage: './images/products/beer-bottle.png',
       title: 'Craft Beer Experience',
       subtitle: 'Local and international craft brews for the connoisseur',
       buttonText: 'Discover Beers'
