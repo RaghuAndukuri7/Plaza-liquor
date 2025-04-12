@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import './styles/HeroCarousel.css';
 
 const HeroCarousel = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [ setCurrentSlide] = useState(0);
   const [loadedImages, setLoadedImages] = useState({});
   
   const slides = [
@@ -28,7 +28,7 @@ const HeroCarousel = () => {
     },
     {
       id: 3,
-      image: '../images/hero/craftbeerhero.JPG',
+      image: '../images/hero/craftbeerhero.jpg',
       productImage: './images/products/beerbottle.png',
       title: 'Craft Beer Experience',
       subtitle: 'Local and international craft brews for the connoisseur',
