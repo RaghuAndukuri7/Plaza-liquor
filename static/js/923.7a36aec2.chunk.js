@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkplaza_liquor=self.webpackChunkplaza_liquor||[]).push([[923],{3923:(s,a,l)=>{l.r(a),l.d(a,{default:()=>c});l(5043);var e=l(579);const c=()=>(0,e.jsx)("div",{className:"min-h-screen py-12 px-4 sm:px-6 bg-gray-50",children:(0,e.jsxs)("div",{className:"max-w-7xl mx-auto",children:[(0,e.jsx)("h1",{className:"text-3xl font-bold text-gray-900 mb-8",children:"Cognac & Brandy"}),(0,e.jsx)("div",{className:"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"})]})})}}]);
+//# sourceMappingURL=923.7a36aec2.chunk.js.map

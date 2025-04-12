@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkplaza_liquor=self.webpackChunkplaza_liquor||[]).push([[989],{6989:(a,s,e)=>{e.r(s),e.d(s,{default:()=>r});e(5043);var l=e(579);const r=()=>(0,l.jsx)("div",{className:"min-h-screen py-12 px-4 sm:px-6 bg-gray-50",children:(0,l.jsx)("div",{className:"max-w-7xl mx-auto",children:(0,l.jsx)("h1",{className:"text-3xl font-bold text-gray-900 mb-8",children:"Our Products"})})})}}]);
+//# sourceMappingURL=989.eef33c5a.chunk.js.map
