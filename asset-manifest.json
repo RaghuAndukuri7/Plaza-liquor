@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/Plaza-liquor/static/css/main.2ed587b8.css",
-    "main.js": "/Plaza-liquor/static/js/main.071dd4e8.js",
+    "main.js": "/Plaza-liquor/static/js/main.1cb300b2.js",
     "static/css/853.9c303737.chunk.css": "/Plaza-liquor/static/css/853.9c303737.chunk.css",
-    "static/js/853.70e8f549.chunk.js": "/Plaza-liquor/static/js/853.70e8f549.chunk.js",
+    "static/js/853.52a9de52.chunk.js": "/Plaza-liquor/static/js/853.52a9de52.chunk.js",
     "static/css/903.031f63f7.chunk.css": "/Plaza-liquor/static/css/903.031f63f7.chunk.css",
     "static/js/903.ee5b7d60.chunk.js": "/Plaza-liquor/static/js/903.ee5b7d60.chunk.js",
     "static/js/638.46bc2ec2.chunk.js": "/Plaza-liquor/static/js/638.46bc2ec2.chunk.js",
@@ -27,9 +27,9 @@
     "static/media/slick.woff": "/Plaza-liquor/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Plaza-liquor/index.html",
     "main.2ed587b8.css.map": "/Plaza-liquor/static/css/main.2ed587b8.css.map",
-    "main.071dd4e8.js.map": "/Plaza-liquor/static/js/main.071dd4e8.js.map",
+    "main.1cb300b2.js.map": "/Plaza-liquor/static/js/main.1cb300b2.js.map",
     "853.9c303737.chunk.css.map": "/Plaza-liquor/static/css/853.9c303737.chunk.css.map",
-    "853.70e8f549.chunk.js.map": "/Plaza-liquor/static/js/853.70e8f549.chunk.js.map",
+    "853.52a9de52.chunk.js.map": "/Plaza-liquor/static/js/853.52a9de52.chunk.js.map",
     "903.031f63f7.chunk.css.map": "/Plaza-liquor/static/css/903.031f63f7.chunk.css.map",
     "903.ee5b7d60.chunk.js.map": "/Plaza-liquor/static/js/903.ee5b7d60.chunk.js.map",
     "638.46bc2ec2.chunk.js.map": "/Plaza-liquor/static/js/638.46bc2ec2.chunk.js.map",
@@ -49,6 +49,6 @@
   },
   "entrypoints": [
     "static/css/main.2ed587b8.css",
-    "static/js/main.071dd4e8.js"
+    "static/js/main.1cb300b2.js"
   ]
 }
